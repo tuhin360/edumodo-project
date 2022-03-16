@@ -1,0 +1,801 @@
+         /*===== Default Css =====*/
+         
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+         }
+         
+         body {
+             font-family: 'Roboto', sans-serif;
+         }
+         
+         .container-full {
+             width: 100%;
+             margin: 0 auto;
+         }
+         
+         .container {
+             width: 1100px;
+             margin: 0 auto;
+         }
+         
+         .container-full:before,
+         .container-full:after,
+         .container:before,
+         .container:after {
+             content: "";
+             display: table;
+             clear: both;
+         }
+         
+         .col-25 {
+             width: 25%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         .col-30 {
+             width: 30%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         .col-33 {
+             width: 33.33%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         .col-50 {
+             width: 50%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         .col-70 {
+             width: 70%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         .col-100 {
+             width: 100%;
+             float: left;
+             padding: 0 15px;
+         }
+         
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+         .section-padding {
+             padding-top: 100px;
+             padding-bottom: 100px;
+         }
+         
+         img {
+             width: 100%;
+             height: auto;
+         }
+         
+         a {
+             text-decoration: none;
+         }
+         
+         li {
+             list-style: none;
+         }
+         /*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+         /*============== Site Css ==============*/
+         /*======== 01.header css ========*/
+         
+         .logo {
+             margin: 20px 0;
+             float: left;
+         }
+         
+         .main-menu {
+             margin: 30px 0px;
+             float: right;
+         }
+         
+         .main-menu li {
+             list-style: none;
+             display: inline-block;
+         }
+         
+         .main-menu li .home-menu {
+             color: #FF5421;
+         }
+         
+         .main-menu li a {
+             text-decoration: none;
+             margin: 0px 15px;
+             font-family: 'Poppins', sans-serif;
+             font-weight: 700px;
+             font-size: 16px;
+             transition: .3s;
+             text-transform: capitalize;
+         }
+         
+         .main-menu li a:hover {
+             color: #FF8E21;
+         }
+         
+         .main-menu li a i {
+             transition: .3s;
+         }
+         
+         .main-menu li a:hover i {
+             transform: rotate(180deg);
+         }
+         /*======== 02.home css ========*/
+         
+         .home {
+             background: url("../img/home/01.jpg");
+             background-position: center;
+             background-size: cover;
+             background-repeat: no-repeat;
+             padding: 160px 0;
+             position: relative;
+             z-index: 1;
+         }
+         
+         .home:before {
+             content: "";
+             position: absolute;
+             height: 100%;
+             width: 100%;
+             background: #060a53;
+             top: 0;
+             left: 0;
+             opacity: .3;
+             z-index: -1;
+         }
+         
+         .home h6 {
+             color: #FF5421;
+             font-size: 17px;
+             font-weight: 500;
+             letter-spacing: 4px;
+             text-transform: uppercase;
+             line-height: 17px;
+         }
+         
+         .home h1 {
+             font-size: 70px;
+             font-weight: 700;
+             color: #fff;
+             line-height: 77px;
+             margin: 30px 0;
+         }
+         
+         .home p {
+             font-size: 18px;
+             font-weight: 400;
+             color: #fff;
+             line-height: 28.8px;
+             margin-bottom: 60px;
+         }
+         
+         .btn {
+             color: #ffffff;
+             font-size: 14px;
+             font-weight: 700;
+             letter-spacing: 1px;
+             text-transform: uppercase;
+             line-height: 14px;
+             text-decoration: none;
+             background: #FF5421;
+             padding: 20px 35px;
+             border-radius: 5px;
+             transition: .5s
+         }
+         
+         .btn:hover {
+             background: #eb410e;
+         }
+         /*======== 03.categories css ========*/
+         
+         .categories {
+             background: #FF5421;
+         }
+         
+         .categories-box {
+             display: flex;
+             margin: 80px 0;
+         }
+         
+         .ctg-icon {
+             float: left;
+         }
+         
+         .ctg-icon i {
+             color: #FF5421;
+             background: #fff;
+             height: 70px;
+             width: 70px;
+             text-align: center;
+             line-height: 70px;
+             border-radius: 50%;
+             font-size: 30px;
+         }
+         
+         .ctg-content {
+             color: #FFFFFF;
+             font-size: 24px;
+             font-weight: 700;
+             margin-left: 25px;
+         }
+         
+         .ctg-content p {
+             color: #FFFFFF;
+             font-size: 16px;
+             font-weight: 400;
+             margin-top: 15px;
+         }
+         /*======== 04.about css ========*/
+         
+         .about-left h6 {
+             color: #FF5421;
+             font-size: 16px;
+             font-weight: 500;
+             letter-spacing: 1px;
+             line-height: 16px;
+             text-transform: uppercase;
+         }
+         
+         .about-left h2 {
+             color: #132643;
+             font-size: 40px;
+             font-weight: 700;
+             margin: 30px 0 60px 0;
+             line-height: 52.2px;
+             text-transform: capitalize;
+         }
+         
+         .about p {
+             color: #61686E;
+             font-size: 16px;
+             font-weight: 400;
+             line-height: 24px;
+         }
+         /*======== 05. program css ========*/
+         
+         .program {
+             background: #F5F5F5;
+         }
+         
+         .section-title {
+             text-align: center;
+         }
+         
+         .section-title span {
+             color: #FF5421;
+             font-family: 'Roboto', sans-serif;
+             font-size: 16px;
+             font-weight: 500px;
+             letter-spacing: 1px;
+             line-height: 16px;
+             text-transform: uppercase;
+         }
+         
+         .section-title h2 {
+             color: #132643;
+             font-family: 'Roboto', sans-serif;
+             font-size: 44px;
+             font-weight: 700px;
+             letter-spacing: 1px;
+             line-height: 44px;
+             text-transform: capitalize;
+             margin-top: 20px;
+         }
+         
+         .section-item-box {
+             margin-top: 50px;
+             background: #fff;
+         }
+         
+         .section-item-content {
+             padding: 35px 25px 35px 25px;
+         }
+         
+         .section-item-content h3 a {
+             color: #132643;
+             font-size: 20px;
+             font-weight: 700px;
+             line-height: 28px;
+             text-transform: capitalize;
+         }
+         
+         .section-item-content p {
+             color: #61686E;
+             font-size: 16px;
+             font-weight: 400px;
+             line-height: 24px;
+             margin: 20px 0;
+         }
+         
+         .section-item-content a {
+             color: #FE5320;
+             font-size: 14px;
+             font-weight: 700px;
+             line-height: 14px;
+             letter-spacing: 1px;
+             text-transform: uppercase;
+             transition: .3s;
+         }
+         
+         .section-item-content a:hover {
+             color: #eb4c1c;
+         }
+         /*======== 06. courses css ========*/
+         
+         .courses .section-item-box {
+             background: #F7F7F7;
+         }
+         
+         .section-item-content h6 {
+             color: #FFFFFF;
+             font-size: 15px;
+             font-weight: 400;
+             background: #FF5421;
+             margin-top: 20px;
+             padding: 10px;
+             width: 70px;
+             border-radius: 5px;
+             text-align: center;
+         }
+         
+         .star {
+             display: flex;
+             color: #ff3232;
+             margin-top: 20px;
+         }
+         
+         .star li {
+             margin-right: 2px;
+         }
+         /*======== 07. counter css ========*/
+         
+         .counter {
+             background: url("../img/counter.jpg");
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+             position: relative;
+             z-index: 1;
+         }
+         
+         .counter:before {
+             position: absolute;
+             content: "";
+             height: 100%;
+             width: 100%;
+             top: 0;
+             left: 0;
+             background: #FC5927;
+             opacity: .9;
+             z-index: -1;
+         }
+         
+         .counter-single {
+             text-align: center;
+             color: #ffffff;
+             padding: 90px 0;
+         }
+         
+         .counter-single h2 {
+             color: #fff;
+             font-size: 50px;
+             font-weight: 700;
+             margin-bottom: 20px;
+             line-height: 52px;
+         }
+         
+         .counter-single span {
+             color: #fff;
+             font-size: 20px;
+             font-weight: 500;
+             text-transform: capitalize;
+             line-height: 45px;
+         }
+         /*======== 08. testimonial css ========*/
+         
+         .testimonial-box {
+             background: #F5F5F5;
+             padding: 40px 30px;
+             margin-top: 75px;
+         }
+         
+         .testimonial-box i {
+             color: #DDDDDD;
+             font-size: 25px;
+         }
+         
+         .testimonial-box p {
+             color: #61686E;
+             font-size: 16px;
+             font-weight: 400;
+             line-height: 24px;
+             margin: 20px 0;
+         }
+         
+         .test-footer {
+             display: flex;
+             border-top: 1px solid #DDDDDD;
+         }
+         
+         .test-footer img {
+             height: 75px;
+             width: 75px;
+             border-radius: 50%;
+             margin-top: 25px;
+         }
+         
+         .test-footer-content {
+             margin-left: 30px;
+             margin-top: 40px;
+         }
+         
+         .test-footer-content h6 {
+             color: #132643;
+             font-size: 20px;
+             font-weight: 700;
+             line-height: 22px;
+             text-transform: capitalize;
+             margin-bottom: 8px;
+         }
+         
+         .test-footer-content span {
+             color: #61686E;
+             font-size: 14px;
+             font-weight: 400;
+             line-height: 21px;
+             text-transform: capitalize;
+         }
+         /*======== 09. events css ========*/
+         
+         .events {
+             background: #F5F5F5;
+         }
+         
+         .date-location i {
+             color: #FF5E2E;
+             margin-right: 10px;
+             font-size: 20px;
+         }
+         
+         .date-location {
+             color: #61686E;
+             font-size: 15px;
+             font-weight: 400;
+             line-height: 21px;
+             display: flex;
+             text-transform: capitalize;
+             margin-bottom: 25px;
+         }
+         
+         .location-right i {
+             margin-left: 50px;
+         }
+         /*======== 10. video css ========*/
+         
+         .video {
+             background: url("../img/video/01.jpg");
+             color: #fff;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             text-align: center;
+             position: relative;
+             z-index: 1;
+         }
+         
+         .video:before {
+             content: "";
+             position: absolute;
+             background: #031a2e;
+             height: 100%;
+             width: 100%;
+             opacity: .8;
+             top: 0;
+             left: 0;
+             z-index: -1;
+         }
+         
+         .video-box {
+             margin: 110px 0;
+         }
+         
+         .video h6 {
+             color: #ffffff;
+             font-size: 16px;
+             font-weight: 400;
+             line-height: 16px;
+             letter-spacing: 1px;
+         }
+         
+         .video h3 {
+             color: #ffffff;
+             font-size: 50px;
+             margin: 27px;
+             font-weight: 700;
+             line-height: 48px;
+         }
+         
+         .video i {
+             color: #ffffff;
+             font-size: 45px;
+             margin-top: 50px;
+             background: #FF5421;
+             height: 98px;
+             width: 98px;
+             border-radius: ;
+             text-align: center;
+             line-height: 90px;
+             border-radius: 50%;
+         }
+         /*======== 11. choose css ========*/
+         
+         .choose {
+             background: #F5F5F5;
+         }
+         
+         .choose-box-content01 img {
+             height: 568px;
+             width: 552px;
+         }
+         
+         .choose-box-content02 {
+             padding: 60px;
+         }
+         
+         .choose-box-content02 h3 {
+             font-size: 44px;
+             font-weight: 700;
+             color: #132643;
+             line-height: 44px;
+             text-transform: capitalize;
+         }
+         
+         .choose-lr {
+             display: flex;
+             margin: 35px 0px;
+         }
+         
+         .choose-lr i {
+             color: #ffffff;
+             background: #FF5421;
+             height: 65px;
+             width: 65px;
+             text-align: center;
+             line-height: 70px;
+             border-radius: 50%;
+             font-size: 25px;
+         }
+         
+         .choose-right {
+             margin: 0 25px;
+         }
+         
+         .choose-right h5 {
+             font-size: 24px;
+             font-weight: 400;
+             color: #132643;
+             line-height: 28.2px;
+         }
+         
+         .choose-right p {
+             font-size: 16px;
+             font-weight: 400;
+             color: #132643;
+             line-height: 24px;
+             margin-top: 8px;
+         }
+         /*======== 12. teacher css ========*/
+         
+         .teacher-box {
+             padding: 60px 0;
+             transition: .4s;
+             position: relative;
+             z-index: 1;
+         }
+         
+         .teacher-social {
+             position: absolute;
+             display: flex;
+             border-radius: 5px;
+             left: 13px;
+             opacity: 0;
+             transition: .5s;
+             bottom: 120px;
+             z-index: 1;
+             height: 135px;
+         }
+         
+         .teacher-social {
+             margin-left: 25px;
+         }
+         
+         .teacher-social li a {
+             background: #ffffff;
+             margin: 0 8px;
+             padding: 15px;
+             border-radius: 50%;
+             color: #FF630E;
+             text-align: center;
+             font-size: 20px;
+         }
+         
+         .teacher-box:hover .teacher-social {
+             opacity: 1;
+             bottom: 145px;
+         }
+         
+         .teacher-content {
+             text-align: center;
+             padding: 25px 0;
+         }
+         
+         .teacher-content h4 {
+             text-transform: capitalize;
+             font-size: 20px;
+             font-weight: 600;
+             color: #132643;
+             margin-bottom: 10px;
+         }
+         
+         .teacher-content span {
+             text-transform: capitalize;
+             font-size: 15px;
+             font-weight: 400;
+             color: #61686E;
+         }
+         /*======== 13. blog css ========*/
+         
+         .blog {
+             background: #F5F5F5;
+         }
+         
+         .blog .section-item-content a i {
+             transition: .3s;
+             padding: 5px;
+         }
+         
+         .blog .section-item-content i:hover {
+             margin-left: 15px;
+         }
+         
+         .blog .section-item-box {
+             overflow: hidden;
+             display: inline-block;
+         }
+         
+         .blog .section-item-box img {
+             transition: .5s;
+             display: block;
+         }
+         
+         .blog .section-item-box img:hover {
+             transform: scale(1.2);
+         }
+         /*======== 14. footer css ========*/
+         
+         .footer {
+             background: #313131;
+             color: #fff;
+         }
+         
+         .footer-box {
+             margin: 65px 0;
+         }
+         
+         .footer-box h3 {
+             font-size: 20px;
+             font-weight: 600;
+             color: #fff;
+             margin-bottom: 20px;
+         }
+         
+         .footer-box p {
+             font-size: 15px;
+             font-weight: 400;
+             color: #fff;
+             line-height: 22.5px;
+             margin-bottom: 10px;
+         }
+         
+         .footer-box span {
+             font-size: 15px;
+             font-weight: 400;
+             color: #fff;
+             line-height: 22.5px;
+         }
+         
+         .footer-box h6 {
+             font-size: 15px;
+             font-weight: 400;
+             color: #fff;
+             line-height: 22.5px;
+         }
+         
+         .footer-box .quick {
+             font-size: 15px;
+             font-weight: 400;
+             color: #fff;
+             line-height: 22.5px;
+         }
+         
+         .about-us h6 {
+             margin-top: 7px;
+         }
+         
+         .quick li {
+             transition: .3s;
+             margin-bottom: 8px;
+         }
+         
+         .quick li:hover {
+             color: #FF5421;
+         }
+         
+         .insta-list img {
+             height: 80px;
+             width: 80px;
+         }
+         
+         .insta-list,
+         .insta-list02 {
+             display: flex;
+             margin-top: 8px;
+         }
+         
+         .insta-list li {
+             margin-right: 10px;
+         }
+         
+         .insta-list02 img {
+             height: 80px;
+             width: 80px;
+         }
+         
+         .insta-list02 li {
+             margin-right: 10px;
+         }
+         
+         .map {
+             height: 150px;
+             width: 260px;
+             margin-left: 15px;
+         }
+         /*======== 15. footer bottom css ========*/
+         
+         .footer-bottom {
+             background: #2A2E31;
+             padding-top: 50px;
+             padding-bottom: 50px;
+         }
+         
+         .fb-left {
+             color: #CCCCCC;
+             font-size: 14px;
+             font-weight: 400;
+         }
+         
+         .fb-right {
+             display: flex;
+             float: right;
+         }
+         
+         .fb-right li a {
+             margin-left: 20px;
+             color: #CCCCCC;
+             font-size: 16px;
+             transition: .3s;
+         }
+         
+         .fb-right li a:hover {
+             color: #FF5421;
+         }
